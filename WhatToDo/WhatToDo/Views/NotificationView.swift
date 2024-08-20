@@ -1,4 +1,5 @@
 import SwiftUI
+import RevenueCat
 
 struct NotificationView: View {
     @StateObject var requestViewModel = RequestViewModel()
@@ -76,6 +77,16 @@ struct NotificationView: View {
                 .foregroundColor(requestViewModel.requestStatus == "Kullanıcı Bulunamadı!" ? .red : .green)
                 .padding(.bottom)
         }
+        .onAppear(perform: {
+            Purchases.shared.getOfferings { offerings, error in
+                if let error {
+                    print(error)
+                }
+                if let offerings {
+                    print(offerings)
+                }
+            }
+        })
     }
 }
 

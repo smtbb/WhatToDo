@@ -3,8 +3,15 @@
     {
       "filename" : "DALL·E 2024-08-19 13.55.22 - A simple and minimalistic logo for a to-do list app called 'Day2Do' without any text. The logo should convey the idea of organization, tasks, and prod.jpg",
       "idiom" : "universal",
-      "platform" : "ios",
-      "size" : "1024x1024"
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
     }
   ],
   "info" : {

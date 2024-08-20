@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA02937F2C6CA8DA00D5ECB5 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = DA02937E2C6CA8DA00D5ECB5 /* FirebaseMessaging */; };
 		DA49AF1C2C60E427005696E9 /* SharedTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA49AF1B2C60E427005696E9 /* SharedTask.swift */; };
 		DA49AF1E2C60E472005696E9 /* SharedTaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA49AF1D2C60E472005696E9 /* SharedTaskViewModel.swift */; };
 		DA49AF202C60E916005696E9 /* SharedTaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA49AF1F2C60E916005696E9 /* SharedTaskListView.swift */; };
@@ -36,9 +37,14 @@
 		DAAB161B2C5FA4BA000C9CF4 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAB161A2C5FA4BA000C9CF4 /* Request.swift */; };
 		DAAB161D2C5FA529000C9CF4 /* SharedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAB161C2C5FA529000C9CF4 /* SharedList.swift */; };
 		DAAB161F2C5FA5A2000C9CF4 /* SharedListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAB161E2C5FA5A2000C9CF4 /* SharedListViewModel.swift */; };
+		DABCDEF22C6E104400A9C82A /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = DABCDEF12C6E104400A9C82A /* RevenueCat */; };
+		DABCDEF42C6E104400A9C82A /* RevenueCatUI in Frameworks */ = {isa = PBXBuildFile; productRef = DABCDEF32C6E104400A9C82A /* RevenueCatUI */; };
+		DABCDEF62C6E4DCF00A9C82A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DABCDEF52C6E4DCF00A9C82A /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA0293802C6CDECD00D5ECB5 /* WhatToDo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WhatToDo.entitlements; sourceTree = "<group>"; };
+		DA0293812C6CDEEA00D5ECB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		DA49AF1B2C60E427005696E9 /* SharedTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTask.swift; sourceTree = "<group>"; };
 		DA49AF1D2C60E472005696E9 /* SharedTaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTaskViewModel.swift; sourceTree = "<group>"; };
 		DA49AF1F2C60E916005696E9 /* SharedTaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTaskListView.swift; sourceTree = "<group>"; };
@@ -62,6 +68,7 @@
 		DAAB161A2C5FA4BA000C9CF4 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		DAAB161C2C5FA529000C9CF4 /* SharedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedList.swift; sourceTree = "<group>"; };
 		DAAB161E2C5FA5A2000C9CF4 /* SharedListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedListViewModel.swift; sourceTree = "<group>"; };
+		DABCDEF52C6E4DCF00A9C82A /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,19 +76,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA02937F2C6CA8DA00D5ECB5 /* FirebaseMessaging in Frameworks */,
 				DA542E2E2C5A6F99003DE824 /* FirebaseDatabase in Frameworks */,
 				DA542E362C5A6F99003DE824 /* FirebaseStorageCombine-Community in Frameworks */,
 				DA542E302C5A6F99003DE824 /* FirebaseFirestore in Frameworks */,
 				DA542E2A2C5A6F99003DE824 /* FirebaseAuth in Frameworks */,
+				DABCDEF22C6E104400A9C82A /* RevenueCat in Frameworks */,
 				DA542E322C5A6F99003DE824 /* FirebaseFirestoreCombine-Community in Frameworks */,
 				DA542E2C2C5A6F99003DE824 /* FirebaseAuthCombine-Community in Frameworks */,
+				DABCDEF42C6E104400A9C82A /* RevenueCatUI in Frameworks */,
 				DA542E342C5A6F99003DE824 /* FirebaseStorage in Frameworks */,
+				DABCDEF62C6E4DCF00A9C82A /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA02937D2C6CA8DA00D5ECB5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DABCDEF52C6E4DCF00A9C82A /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DA4CDD092C635FE8000D0134 /* Rows */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +123,7 @@
 				DA542E262C5A6D3A003DE824 /* GoogleService-Info.plist */,
 				DA542E072C5A6A84003DE824 /* WhatToDo */,
 				DA542E062C5A6A84003DE824 /* Products */,
+				DA02937D2C6CA8DA00D5ECB5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,6 +138,8 @@
 		DA542E072C5A6A84003DE824 /* WhatToDo */ = {
 			isa = PBXGroup;
 			children = (
+				DA0293812C6CDEEA00D5ECB5 /* Info.plist */,
+				DA0293802C6CDECD00D5ECB5 /* WhatToDo.entitlements */,
 				DA542E1F2C5A6B32003DE824 /* App Setup */,
 				DA542E1E2C5A6B24003DE824 /* Persistence */,
 				DA542E1D2C5A6B1A003DE824 /* ViewModels */,
@@ -215,6 +237,9 @@
 				DA542E312C5A6F99003DE824 /* FirebaseFirestoreCombine-Community */,
 				DA542E332C5A6F99003DE824 /* FirebaseStorage */,
 				DA542E352C5A6F99003DE824 /* FirebaseStorageCombine-Community */,
+				DA02937E2C6CA8DA00D5ECB5 /* FirebaseMessaging */,
+				DABCDEF12C6E104400A9C82A /* RevenueCat */,
+				DABCDEF32C6E104400A9C82A /* RevenueCatUI */,
 			);
 			productName = WhatToDo;
 			productReference = DA542E052C5A6A84003DE824 /* WhatToDo.app */;
@@ -246,6 +271,7 @@
 			mainGroup = DA542DFC2C5A6A84003DE824;
 			packageReferences = (
 				DA542E282C5A6F99003DE824 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				DABCDEF02C6E104400A9C82A /* XCRemoteSwiftPackageReference "purchases-ios-spm" */,
 			);
 			productRefGroup = DA542E062C5A6A84003DE824 /* Products */;
 			projectDirPath = "";
@@ -423,12 +449,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WhatToDo/WhatToDo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WhatToDo/Preview Content\"";
 				DEVELOPMENT_TEAM = GNQW5J526Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WhatToDo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -438,7 +466,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sametbaltacioglu.WhatToDo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -452,12 +480,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WhatToDo/WhatToDo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WhatToDo/Preview Content\"";
 				DEVELOPMENT_TEAM = GNQW5J526Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WhatToDo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -467,7 +497,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sametbaltacioglu.WhatToDo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -508,9 +538,22 @@
 				minimumVersion = 11.0.0;
 			};
 		};
+		DABCDEF02C6E104400A9C82A /* XCRemoteSwiftPackageReference "purchases-ios-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RevenueCat/purchases-ios-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		DA02937E2C6CA8DA00D5ECB5 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA542E282C5A6F99003DE824 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
 		DA542E292C5A6F99003DE824 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DA542E282C5A6F99003DE824 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
@@ -545,6 +588,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DA542E282C5A6F99003DE824 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = "FirebaseStorageCombine-Community";
+		};
+		DABCDEF12C6E104400A9C82A /* RevenueCat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DABCDEF02C6E104400A9C82A /* XCRemoteSwiftPackageReference "purchases-ios-spm" */;
+			productName = RevenueCat;
+		};
+		DABCDEF32C6E104400A9C82A /* RevenueCatUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DABCDEF02C6E104400A9C82A /* XCRemoteSwiftPackageReference "purchases-ios-spm" */;
+			productName = RevenueCatUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 

@@ -6,8 +6,11 @@
 //
 
 import SwiftUI
+import RevenueCat
+import RevenueCatUI
 
 struct TabBarView: View {
+//    @State var currentOffering: Offering?
     @ObservedObject var authViewModel: AuthViewModel
     var body: some View {
         TabView {
@@ -23,8 +26,32 @@ struct TabBarView: View {
                 .tabItem{
                     Label("Bildirimler",systemImage: "bell")
                 }
+                .onAppear {
+                    fetchCurrentOffering()
+                }
+//            Purchases.shared.getOfferings { offerings, error in
+//                if let offer = offerings?.current, error == nil {
+//                    
+//                }
+//            }
         }
         .padding(.top,30)
+    }
+}
+
+private func fetchCurrentOffering() {
+    Purchases.shared.getOfferings { offerings, error in
+        if let offerings = offerings, let currentOffering = offerings.current {
+            print("Current offering: \(currentOffering)")
+            // Burada gelen tekliflerle ilgili işlemleri yapabilirsiniz.
+            // Örneğin, bir Paywall gösterimi yapabilirsiniz.
+        } else {
+            if let error = error {
+                print("Failed to fetch offerings: \(error.localizedDescription)")
+            } else {
+                print("No current offering available.")
+            }
+        }
     }
 }
 
